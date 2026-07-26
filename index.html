@@ -3,29 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عارض المستندات</title>
+  <title>فكرة المشروع</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body, html {
-      width: 100%;
-      height: 100%;
-      background-color: #323639;
+    body {
+      background-color: #1e293b; /* لون خلفية داكن ومريح للعين */
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
     }
-    iframe {
+    h1 {
+      color: #f8fafc;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .image-container {
       width: 100%;
-      height: 100vh;
-      border: none;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
 
-  <!-- استخدام عارض Google PDF المباشر لمنع تنزيل الملف على الهواتف وعرضه كصفحات -->
-  <iframe src="https://docs.google.com/viewer?url=https://amratef70.github.io/Read/myfile.pdf&embedded=true"></iframe>
+  <h1>فكرة المشروع</h1>
+
+  <div class="image-container">
+    <!-- تأكد أن اسم الصورة بجانب هذا الملف مطابق تماماً لـ 1.jpg -->
+    <img src="1.jpg" alt="فكرة المشروع">
+  </div>
 
 </body>
 </html>
