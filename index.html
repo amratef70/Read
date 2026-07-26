@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عارض ملفات PDF</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      color: #1e293b;
+      margin-bottom: 15px;
+    }
+
+    .pdf-viewer {
+      width: 100%;
+      max-width: 900px;
+      height: 85vh; /* ارتفاع العارض بالنسبة للشاشة */
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>معاينة المستند</h2>
+
+  <div class="الدليل.pdf">
+    <!-- استبدل myfile.pdf باسم ملفك أو رابط الملف -->
+    <iframe src="myfile.pdf#toolbar=1" type="application/pdf"></iframe>
+  </div>
+
+</body>
+</html>
+
